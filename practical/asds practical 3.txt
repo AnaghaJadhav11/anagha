@@ -1,0 +1,151 @@
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git init
+Initialized empty Git repository in C:/Users/user/Desktop/anu/.git/
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git config --global user.email "anaghahj11@gmail.com"
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git config user.email
+anaghahj11@gmail.com
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git config --global user.name "Anagha"
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git config user.name
+Anagha
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ touch example.txt
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        example.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git add example.txt
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   example.txt
+
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   example.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   example.txt
+
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git add example.txt
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   example.txt
+
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git commit
+[master (root-commit) cda6ac4] my first page of commit w
+ 1 file changed, 1 insertion(+)
+ create mode 100644 example.txt
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git touch examplel.text
+git: 'touch' is not a git command. See 'git --help'.
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ touch examplel.txt
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ touch examplel2.txt
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ touch example3.txt
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ touch examplel4.txt
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        example3.txt
+        examplel.txt
+        examplel2.txt
+        examplel4.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git add --a
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   example3.txt
+        new file:   examplel.txt
+        new file:   examplel2.txt
+        new file:   examplel4.txt
+
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git commit
+[master c2c3015] second commit
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 example3.txt
+ create mode 100644 examplel.txt
+ create mode 100644 examplel2.txt
+ create mode 100644 examplel4.txt
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$ git log
+commit c2c3015675470d60150fb804e461b7b59c5741c7 (HEAD -> master)
+Author: Anagha <anaghahj11@gmail.com>
+Date:   Fri Jun 10 02:27:29 2022 -0700
+
+    second commit
+
+commit cda6ac437552ad9786426871c397493d8ddd0835
+Author: Anagha <anaghahj11@gmail.com>
+Date:   Fri Jun 10 02:17:16 2022 -0700
+
+    my first page of commit
+    w
+
+user@DESKTOP-7KV4HPC MINGW32 ~/Desktop/anu (master)
+$
